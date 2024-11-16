@@ -1,0 +1,16 @@
+.Foot{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+
+}
+
+.Fot{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Fot ul li{
+    padding: 1px;
+    list-style-type: none;
+}

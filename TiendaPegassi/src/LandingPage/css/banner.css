@@ -1,0 +1,12 @@
+.Imagen{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210205/pngtree-car-banner-background-image_547203.jpg);
+    height: 550px;
+    width: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 30px;
+}
