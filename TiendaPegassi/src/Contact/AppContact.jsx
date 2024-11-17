@@ -1,10 +1,19 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
+import { Navbar } from "../ComponentsHF/Nav";
+import { Foot } from "../ComponentsHF/Footer";
+import { Formulario } from "./Form";
+import './css/form.css'
+
 
 export function AppContact() {
-    return (
+    return(
         <>
-        <h1>Ejemplo1</h1>
-        <h1>Ejemplo2</h1>
+        <Navbar/>
+        <h1 className="contactTitle">Sección de contacto</h1>
+        <section className="compContact">
+            <Formulario/>
+        </section>
+        <Foot/>
         </>
     )
 }

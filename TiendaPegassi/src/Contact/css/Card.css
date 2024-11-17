@@ -1,0 +1,82 @@
+.compCard{
+    background-color: rgba(115, 0, 137, 0.121);
+    width: 400px;
+    margin: 70px;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 3px 3px 20px rgba(28, 28, 28, 0.475);
+}
+
+.headerCard{
+    text-align: center;
+}
+
+.titleCard {
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.cardHolder{
+    word-wrap: break-word; /* Permite dividir las palabras largas */
+    word-break: break-word; /* Opcional: Divide palabras cuando es necesario */
+    overflow-wrap: break-word; /* Alternativa moderna */
+    max-width: 100%; /* Asegura que no supere el ancho del contenedor */
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 20px;
+    padding: 20px;
+    max-height: 100%;
+    margin-top: 20px ;
+    text-align: center;
+    border: 2px dotted rgba(197, 0, 154, 0.4);
+    
+}
+
+.tipoSolicitud{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.solicitudValue{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.buttonPlace {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.buttonCreate {
+    border: none;
+    background-color: rgb(80, 166, 80);
+    color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 130px;
+    font-size: 16px;
+    padding: 8px;
+    transition: 0.1s;
+}
+
+.buttonCreate:hover {
+    background-color: rgb(65, 135, 65);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+}
+
+.buttonCreate:active {
+    transform: translate(0px, 2px)
+}
+
+
+.esperando {
+    color: gray;
+}
