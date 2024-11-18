@@ -1,5 +1,5 @@
 .compCard{
-    background-color: rgba(137, 71, 150, 0.2);
+    background-color: rgba(255, 125, 246, 0.2);
     width: 30%;
     margin: 70px;
     border-radius: 10px;
@@ -29,7 +29,7 @@
     max-height: 100%;
     margin-top: 20px ;
     text-align: center;
-    border: 2px dotted rgba(180, 71, 156, 0.4);
+    border: 2px dotted rgba(180, 87, 187, 0.4);
     
 }
 
