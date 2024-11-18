@@ -3,12 +3,14 @@ import { Navbar } from "../ComponentsHF/Nav";
 import { Foot } from "../ComponentsHF/Footer";
 import { Formulario } from "./Form";
 import './css/form.css'
-
+import { InfoContact } from "./InfoContact";
 
 export function AppContact() {
     return(
         <>
         <Navbar/>
+        <h1 className="contactTitle">Información de contactos</h1>
+        <InfoContact/>
         <h1 className="contactTitle">Sección de contacto</h1>
         <section className="compContact">
             <Formulario/>
