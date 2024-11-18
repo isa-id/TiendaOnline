@@ -6,7 +6,7 @@ export function Navbar() {
         <>
             <header className="Head">
                 <div>
-                    <h1 className="h1">Pegassi</h1>
+                    <h1 className="h1">PEGASSI</h1>
                 </div>
                 <nav className="Nav">
                     <ul>
