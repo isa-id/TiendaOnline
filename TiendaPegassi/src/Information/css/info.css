@@ -1,0 +1,50 @@
+.compInfo{
+    background-color: rgb(214, 198, 215);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.headerArt{
+    display: flex;
+    justify-content: center;
+    color: rgb(58, 48, 48);
+    }
+
+.ArtHover{
+    display: flex;
+}
+
+.ArtHoverSec{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contHover{
+    background-color: rgb(214, 198, 215);
+    width: 50%;
+    height: 50%;
+    margin: 15px;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+}
+
+.imgHover{
+    background-color:rgb(214, 198, 215);
+    width: 50%;
+    height: 50%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imgHover img{
+    width: 80%;
+    border-radius: 20px;
+
+}
