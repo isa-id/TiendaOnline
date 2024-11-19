@@ -34,7 +34,14 @@ export function Products() {
     return (
         <>
         <section className="productsHover">
-            
+            {productos.map(({id, imgProd, titlProd, priceProd}) => (
+                <CardProduct
+                key={id}
+                imgProd = { imgProd }
+                titleProd = { titlProd }
+                priceProd = { priceProd }
+                />
+            ))}
         </section>
         </>
     )
