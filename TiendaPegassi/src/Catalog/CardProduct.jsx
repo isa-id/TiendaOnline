@@ -4,16 +4,16 @@ import './css/catalog.css'
 export function CardProduct({ imgProd, titleProd, priceProd }) {
     return (
         <>
-        <div className="container">
-            <div className="img-hover">
+        <div className="cardContenedor">
+            <div className="cardImagen">
                 <img src={ imgProd } alt="" />
             </div>
-            <div className="info-hover">
-                <p className="title"> Vehiculo: { titleProd }</p>
-                <p className="price"> Precio: $ { priceProd } </p>
-            </div>
-            <div className="button-hover">
-                <button>Comprar</button>
+            <div className="cardInfo">
+                <p className="cardTitle"> Vehiculo: { titleProd }</p>
+                <p className="cardPrice"> Precio: $ { priceProd } </p>
+                <div className="cardButton">
+                    <button>Comprar</button>
+                </div>
             </div>
         </div>
         </>
