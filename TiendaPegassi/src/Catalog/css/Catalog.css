@@ -1,0 +1,89 @@
+.productsHover{
+    background-color: rgba(255, 243, 243, 0.104);
+    width: 92%;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.container {
+    background-color: rgb(240, 240, 240);
+    width: 620px;
+    height: 540px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+
+.img-hover{
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img-hover img{
+    width: 550px;
+    border-radius: 20px;
+}
+
+.info-hover {
+    height: 170px;
+    background-color: rgb(219, 219, 219);
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title{
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+.price{
+    margin-left: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.button-hover{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.button-hover button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: -60px;
+    transition: 0.3 ease-in;
+}
+
+.button-hover button:hover {
+    background-color: rgb(0, 101, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.41);
+    cursor: pointer;
+}
+
+.button-hover button:active {
+    transform: translate(0px, 2px);
+}
