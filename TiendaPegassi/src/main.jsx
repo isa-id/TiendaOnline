@@ -10,3 +10,5 @@ createRoot(document.getElementById('root')).render(
     <AppCatalog/>
   </StrictMode>,
 )
+
+// Arreglando error de subida de archivos al github

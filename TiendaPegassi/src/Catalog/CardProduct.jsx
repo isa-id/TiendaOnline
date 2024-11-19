@@ -21,4 +21,4 @@ export function CardProduct({ imgProd, titleProd, priceProd }) {
     
 }
 
-/* */
+// Arreglando error de subida de archivos al github
