@@ -8,10 +8,8 @@ import { ContInf } from "./contInf";
 export function IndexP() {
     return(
         <>
-        <Navbar/>
         <Banner/>
         <ContInf/>
-        <Foot/>
         </>
     )
 }

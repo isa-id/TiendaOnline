@@ -8,9 +8,7 @@ export function AppCatalog() {
 
     return(
         <>
-        <Navbar/>
         <Products/>
-        <Foot/>
         </>
     )
 }

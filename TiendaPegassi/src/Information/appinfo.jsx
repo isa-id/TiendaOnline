@@ -7,11 +7,9 @@ import { Foot } from "../ComponentsHF/Footer"
 export function AppInfo() {
     return(
         <>
-        <Navbar/>
         <ArtPrinc/>
         <ArtSec/>
         <ArtTer/>
-        <Foot/>
         </>
     )
 }   
