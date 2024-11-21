@@ -1,10 +1,10 @@
 .compCard{
-    background-color: rgba(255, 125, 246, 0.2);
+    background-color: rgba(0, 0, 0, 0.9);
     width: 30%;
     margin: 70px;
     border-radius: 10px;
     padding: 50px;
-    box-shadow: 3px 3px 20px rgba(28, 28, 28, 0.4);
+    box-shadow: 5px 5px 20px rgba(28, 28, 28, 0.9);
 }
 
 .headerCard{
@@ -15,6 +15,7 @@
     font-size: 22px;
     padding: 0px;
     margin: 0px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -23,17 +24,17 @@
     word-break: break-word; /* Opcional: Divide palabras cuando es necesario */
     overflow-wrap: break-word; /* Alternativa moderna */
     max-width: 100%; /* Asegura que no supere el ancho del contenedor */
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 20px;
     max-height: 100%;
     margin-top: 20px ;
     text-align: center;
-    border: 2px dotted rgba(180, 87, 187, 0.4);
-    
+    border: 2px dotted rgba(255, 255, 255, 0.4);
 }
 
 .tipoSolicitud{
+    color: rgba(255, 255, 255, 1);
     font-size: 20px;
     margin: 0px;
     padding: 0px;
@@ -41,7 +42,7 @@
 
 .solicitudValue{
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 
