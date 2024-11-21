@@ -3,11 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { AppContact } from './Contact/App'
 import { IndexP } from './LandingPage/IndexP'
-import { AppCatalog } from './Catalog/AppCatalog'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppCatalog/>
+    <IndexP/>
   </StrictMode>,
 )
 
