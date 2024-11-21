@@ -5,6 +5,7 @@ export function Banner() {
     return(
         <>
         <section className="Imagen">
+            <h1>PEGASSI</h1>
         </section>
         </>
     )
