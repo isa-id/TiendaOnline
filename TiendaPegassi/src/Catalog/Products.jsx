@@ -37,6 +37,7 @@ export function Products() {
             {productos.map(({id, imgProd, titleProd, priceProd}) => (
                 <CardProduct
                 key={id}
+                id = { id }
                 imgProd = { imgProd }
                 titleProd = { titleProd }
                 priceProd = { priceProd }

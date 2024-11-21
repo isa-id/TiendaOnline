@@ -9,8 +9,8 @@ export function CardProduct({ imgProd, titleProd, priceProd }) {
                 <img src={ imgProd } alt="" />
             </div>
             <div className="cardInfo">
-                <p className="cardTitle"> Vehiculo: { titleProd }</p>
-                <p className="cardPrice"> Precio: $ { priceProd } </p>
+                <p className="cardTitle">{ titleProd }</p>
+                <p className="cardPrice"> ${ priceProd } USD </p>
                 <div className="cardButton">
                     <button>Comprar</button>
                 </div>

@@ -1,5 +1,5 @@
 .compInfo{
-    background-color: rgb(214, 198, 215);
+    background-color: rgba(0, 0, 0, 0.95);
     margin: 20px;
     border-radius: 20px;
     padding: 20px;
@@ -8,7 +8,8 @@
 .headerArt{
     display: flex;
     justify-content: center;
-    color: rgb(58, 48, 48);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     }
 
 .ArtHover{
@@ -21,7 +22,7 @@
 }
 
 .contHover{
-    background-color: rgb(214, 198, 215);
+    background-color: rgba(0, 0, 0, 0);
     width: 50%;
     height: 50%;
     margin: 15px;
@@ -29,12 +30,12 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
-    color: black;
+    color: rgb(255, 255, 255);
     
 }
 
 .imgHover{
-    background-color:rgb(214, 198, 215);
+    background-color: rgba(0, 0, 0, 0);
     width: 50%;
     height: 50%;
     margin: 15px;

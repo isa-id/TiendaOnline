@@ -5,6 +5,7 @@ import { AppCatalog } from "../Catalog/AppCatalog";
 import { IndexP } from "../LandingPage/IndexP";
 import { AppContact } from "../Contact/AppContact";
 import { AppInfo } from "../Information/appinfo";
+import { FocusProduct } from "../Catalog/FocusProd";
 
 export function Navbar() {
     return (

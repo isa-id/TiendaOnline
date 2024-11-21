@@ -1,8 +1,8 @@
 .Imagen{
-    background-image: url(https://s0.smartresize.com/wallpaper/351/764/HD-wallpaper-auto-deportivo-car-cars.jpg);
+    background-image: url(../../images/banner.jpg);
     height: 350px;
     width: 95%;
-    background-position: 0px -1250px;
+    background-position: 0px -340px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 2.5%;
@@ -11,14 +11,16 @@
     margin-bottom: 5%;
     border-radius: 30px;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: start;
+    align-items: center;
     box-shadow:5px 5px 20px rgb(0, 0, 0);
 }
 
 .Imagen h1{
+    margin-top: 2.5%;
+    padding-left: 5%;
     color: rgb(255, 255, 255);
-    font-size: 70px;
+    font-size: 90px;
     width: 25%;
     height: 20%;
     border-radius: 30px;
