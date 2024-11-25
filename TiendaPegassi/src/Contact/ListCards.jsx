@@ -3,22 +3,23 @@ import './css/Card.css'
 import { useSelector, useDispatch } from 'react-redux';
 import { increment } from '../redux/actions';
 
-
-export function CardContact({ solicitudValue, textareaValue, resetForm }) {
+export function Lists() {
     const cards = useSelector(state => state.storeCards.cards);
-    const dispatch = useDispatch();
-    const guardarData = () => {
-        let idActual = cards.length + 1;
-        let newCard = {
-            id: idActual,
-            solicitud: solicitudValue,
-            contenido: textareaValue
-        };
-        dispatch(increment(newCard));
+    return (
+        <>
+            {cards.map(({id, solicitud, contenido}) => (
+                <ListCards
+                key={id}
+                solicitudValue = { solicitud }
+                textareaValue = { contenido }
+                />
+            ))}
+        </>
+    )
 
-        resetForm(); // Reiniciar el formulario después de enviar
-    };
+}
 
+export function ListCards({ solicitudValue, textareaValue }) {
     if (!solicitudValue || !textareaValue) {
         return (
             <div className="compCard">
@@ -44,9 +45,6 @@ export function CardContact({ solicitudValue, textareaValue, resetForm }) {
                     <p className="solicitudValue">{textareaValue}</p>
                 </div>
                 <div className="buttonPlace">
-                    <button type="button" className="buttonCreate" onClick={guardarData}>
-                        Enviar {solicitudValue}
-                    </button>
                 </div>
             </div>
         );
