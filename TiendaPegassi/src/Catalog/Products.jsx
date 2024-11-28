@@ -29,7 +29,6 @@ let productos = [
     }
 ]
 
-
 export function Products() {
     return (
         <>
@@ -49,20 +48,52 @@ export function Products() {
     
 }
 
+/* 
+import React, { useEffect, useState } from "react";
+import './css/catalog.css'
+import { CardProduct } from "./CardProduct";
 
+export function Products() {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
+    useEffect(() => {
+        fetch("http://127.0.0.1:1801/")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Error al obtener los datos de la API");
+                }
+                return response.json();
+            })
+            .then((result) => setData(result))
+            .catch((err) => setError(err.message))
+            .finally(() => setLoading(false));
+    }, []);
 
+    if (loading) return <p>Cargando...</p>;
+    if (error) return <p>Error: {error}</p>;
 
+    return (
+        <>
+            <section className="productsHover">
+                {data.slice(1, 2).map(({ idcar, carname, carprice, carimage }) => (
+                    <CardProduct
+                        key={idcar}
+                        id={idcar}
+                        imgProd={carname}
+                        titleProd={carprice}
+                        priceProd={carimage}
+                    />
+                ))}
+            </section>
+        </>
+    )
 
-
-
-
-
-
+}
+ */
 
 // Arreglando error de subida de archivos al github
-
-
 
 /* {
     productos.map(({ id, imgProd, titleProd, priceProd }) => (
