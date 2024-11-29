@@ -1,24 +1,20 @@
+// CardProduct.jsx
 import React from "react";
-import './css/catalog.css'
+import './css/catalog.css';
 
-export function CardProduct({ imgProd, titleProd, priceProd }) {
+export function CardProduct({ id, imgProd, titleProd, priceProd, handleBuyClick }) {
     return (
-        <>
         <div className="cardContenedor">
             <div className="cardImagen">
-                <img src={ imgProd } alt="" />
+                <img src={imgProd} alt={titleProd} />
             </div>
             <div className="cardInfo">
-                <p className="cardTitle">{ titleProd }</p>
-                <p className="cardPrice"> ${ priceProd } USD </p>
+                <p className="cardTitle">{titleProd}</p>
+                <p className="cardPrice">${priceProd} USD</p>
                 <div className="cardButton">
-                    <button>Comprar</button>
+                    <button onClick={() => handleBuyClick(id, imgProd, titleProd, priceProd)}>Comprar</button>
                 </div>
             </div>
         </div>
-        </>
-    )
-    
+    );
 }
-
-// Arreglando error de subida de archivos al github

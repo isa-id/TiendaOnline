@@ -1,26 +1,30 @@
 .productsHover{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     width: 92%;
     margin: 2%;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
 }
 
 .cardContenedor {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px dotted rgb(0, 0, 0);
     width: 620px;
     height: 540px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 10px black;
 }
 
 
 .cardImagen {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 3px dotted rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -29,16 +33,17 @@
     margin-right: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-radius: 10px;
 }
 
 .cardImagen img{
     width: 550px;
     max-height: 290px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .cardInfo {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.0);
     height: 170px;
     margin-top: -19px;
     margin-left: 20px;
@@ -93,3 +98,13 @@
 }
 
 /* Arreglando error de subida de archivos al github */
+
+.catalogTitle {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}

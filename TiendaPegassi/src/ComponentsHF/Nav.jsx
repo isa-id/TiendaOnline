@@ -29,6 +29,7 @@ export function Navbar() {
                         <Route path="/catalog" element={<AppCatalog />} />
                         <Route path="/contact" element={<AppContact />} />
                         <Route path="/information" element={<AppInfo />} />
+                        <Route path="/product/:id" element={<FocusProduct />} />
                 </Routes>
             </Router>
         </>

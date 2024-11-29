@@ -5,23 +5,28 @@
 **/
 
 // Definición de tipos de acciones
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
+export const ADD_CARD = 'ADD_CARD';
+export const REMOVE_CARD = 'REMOVE_CARD';
+export const EDIT_CARD = 'EDIT_CARD';
+
 
 /**
  * Función para aumentar el contador
  * @returns {Object} Acción de tipo INCREMENT
  */
-export const increment = (newCard) => ({
-    type: INCREMENT,
+export const increment  = (newCard) => ({
+    type: ADD_CARD,
     payload: newCard,
 });
 
-/**
- * Función para disminuir el contador
- * @returns {Object} Acción de tipo DECREMENT
- */
-export const decrement = (id) => ({
-    type: DECREMENT,
-    payload: { id },
+export const removeCard = (id) => ({
+    type: REMOVE_CARD,
+    payload: id,
 });
+
+export const editCard = (id, updatedCard) => ({
+    type: EDIT_CARD,
+    payload: { id, updatedCard },
+});
+
+

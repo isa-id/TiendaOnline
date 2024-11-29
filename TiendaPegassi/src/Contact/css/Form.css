@@ -68,8 +68,11 @@
 .contactTitle{
     text-align: center;
     font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .compLists{
@@ -86,4 +89,14 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* El cambio de colores del ultimo commit fue hecho por JSGC, hubo un error de credenciales - LINEA DE CODIGO PARA CAMBIAR EL LAST COMMIT
+/* El cambio de colores del ultimo commit fue hecho por JSGC, hubo un error de credenciales - LINEA DE CODIGO PARA CAMBIAR EL LAST COMMIT*/
+
+.buttonEdit{
+    background-color: rgb(255, 238, 56);
+    margin-right: 10px;
+}
+
+.buttonDelete{
+    background-color: rgb(255, 56, 56);
+    margin-left: 10px;
+}

@@ -43,6 +43,7 @@ export function CardContact({ solicitudValue, textareaValue, resetForm }) {
                     <b className="tipoSolicitud">Contenido</b>
                     <p className="solicitudValue">{textareaValue}</p>
                 </div>
+                
                 <div className="buttonPlace">
                     <button type="button" className="buttonCreate" onClick={guardarData}>
                         Enviar {solicitudValue}

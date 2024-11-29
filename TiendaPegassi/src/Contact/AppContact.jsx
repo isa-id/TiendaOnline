@@ -12,17 +12,14 @@ import { Lists } from "./ListCards";
 export function AppContact() {
     return (
         <>
-            <Provider store={store}>
+            <Provider store={store}>    
                 <h1 className="contactTitle">Información de contactos</h1>
                 <InfoContact />
                 <h1 className="contactTitle">Sección de contacto</h1>
                 <section className="compContact">
                     <Formulario />
                 </section>
-                <h1 className="contactTitle">Lista de cartas</h1>
-                <section className="compLists">
                     <Lists/>
-                </section>
             </Provider>
         </>
     )

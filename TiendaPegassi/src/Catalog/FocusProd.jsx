@@ -1,31 +1,41 @@
+// FocusProd.jsx
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import { Navbar } from "../ComponentsHF/Nav";
 import { Foot } from "../ComponentsHF/Footer";
-import './css/Focus.css'
+import './css/Focus.css';
 
 export function FocusProduct() {
-    const { imgProd, titleProd, priceProd } = useParams();
-    return(
+    const { state } = useLocation();
+    const { imgProd, titleProd, priceProd } = state || {};
+
+    if (!state) {
+        return <div>No se encontró el producto</div>;
+    }
+    const handleComprar = () => {
+        alert('Grr dame tus datos credicticios')
+    }
+
+    return (
         <>
-        <Navbar/>
         <section className="focusComponent">
             <div className="focusImagen">
-                <img src={imgProd} alt="" />
+                <img src={imgProd} alt={titleProd} />
             </div>
             <div className="focusInfoHover">
                 <div className="focusInfo">
-                    <h1 className="focusTitle"> {titleProd} </h1>
-                    <p className="focusPrice"> {priceProd} </p>
-                    <p className="focusContent"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis odit voluptate impedit distinctio unde dolorem modi voluptatibus dolores vitae velit esse tenetur accusantium quidem ab, eum suscipit, beatae obcaecati et. </p>
+                    <h1 className="focusTitle">{titleProd}</h1>
+                    <p className="focusPrice">${priceProd} USD</p>
+                    <p className="focusContent">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odit voluptate impedit distinctio unde dolorem modi voluptatibus dolores vitae velit esse tenetur accusantium quidem ab, eum suscipit, beatae obcaecati et.
+                    </p>
                     <p className="contact">Número de contacto: 312 691 12 61</p>
-                    
                 </div>
                 <div className="focusButton">
-                    <button>compre</button>
+                    <button onClick={ handleComprar }>Comprar</button>
                 </div>
             </div>
         </section>
-        <Foot/>
         </>
-    )
+    );
 }

@@ -1,22 +1,29 @@
-import { INCREMENT, DECREMENT } from './actions';
+import { ADD_CARD, REMOVE_CARD, EDIT_CARD } from './actions';
 
 const initialState = {
-    cards: []
+    cards: [],
 };
-export function cardReducer(state = initialState, action) {
+
+export const cardReducer = (state = initialState, action) => {
     switch (action.type) {
-        case INCREMENT:
-            let newCard;
-            newCard = [...state.cards, { ...action.payload}];
-            console.log(state)
+        case ADD_CARD:
+            return  { ...state, cards: [...state.cards, action.payload]}
+        case REMOVE_CARD:
             return {
-                ...state,  // Copia el resto del estado
-                cards: newCard  // Reemplaza el array de productos
+                ...state,
+                cards: state.cards.filter((card) => card.id !== action.payload)
             };
             
-        case DECREMENT:
-            
+        case EDIT_CARD:
+            return {
+                ...state,
+                cards: state.cards.map((card) =>
+                    card.id === action.payload.id
+                        ? { ...card, ...action.payload.updatedCard }
+                        : card
+                ),
+            };
         default:
             return state;
     }
-}
+};
