@@ -93,3 +93,24 @@
 .contact {
     color: rgba(175, 175, 175, 0.8);
 }
+
+.NoEncontrado {
+    width: 1536px;
+    height: 485px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.NoEncontrado p {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px dotted rgb(0, 0, 0);
+}

@@ -7,7 +7,7 @@ export function FocusProduct() {
     const { imgProd, titleProd, priceProd } = state || {};
 
     if (!state) {
-        return <div>No se encontró el producto</div>;
+        return <div className="NoEncontrado"> <p>No se encontró el producto</p></div>;
     }
     const handleComprar = () => {
         alert('Grr dame tus datos credicticios')
