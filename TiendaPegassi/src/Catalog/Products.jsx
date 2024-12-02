@@ -1,4 +1,3 @@
-// Products.jsx
 import React from "react";
 import './css/catalog.css';
 import { CardProduct } from "./CardProduct";

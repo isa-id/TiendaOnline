@@ -1,8 +1,5 @@
-// FocusProd.jsx
 import React from "react";
 import { useLocation } from 'react-router-dom';
-import { Navbar } from "../ComponentsHF/Nav";
-import { Foot } from "../ComponentsHF/Footer";
 import './css/Focus.css';
 
 export function FocusProduct() {
