@@ -7,6 +7,7 @@ import { AppContact } from "../Contact/AppContact";
 import { AppInfo } from "../Information/appinfo";
 import { FocusProduct } from "../Catalog/FocusProd";
 import { AppCrud } from "../Crud/AppCrud";
+import { AppCrudMaqueta } from "../Crud/AppCrudMaqueta";
 
 export function Navbar() {
     return (
@@ -23,6 +24,7 @@ export function Navbar() {
                             <li><Link to="/contact">Contacto</Link></li>
                             <li><Link to="/information">Información</Link></li>
                             <li><Link to="/crud">CRUD</Link></li>
+                            <li><Link to="/crudMaqueta">CRUD MAQUETA</Link></li>
                         </ul>
                     </nav>
                 </header>
@@ -32,6 +34,7 @@ export function Navbar() {
                         <Route path="/contact" element={<AppContact />} />
                         <Route path="/information" element={<AppInfo />} />
                         <Route path="/crud" element={<AppCrud />} />
+                        <Route path="/crudMaqueta" element={<AppCrudMaqueta />} />
                         <Route path="/product/:id" element={<FocusProduct />} />
                 </Routes>
             </Router>
