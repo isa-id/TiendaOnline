@@ -6,6 +6,7 @@ import { IndexP } from "../LandingPage/IndexP";
 import { AppContact } from "../Contact/AppContact";
 import { AppInfo } from "../Information/appinfo";
 import { FocusProduct } from "../Catalog/FocusProd";
+import { AppCrud } from "../Crud/AppCrud";
 
 export function Navbar() {
     return (
@@ -21,6 +22,7 @@ export function Navbar() {
                             <li><Link to="/catalog">Catalogo</Link></li>
                             <li><Link to="/contact">Contacto</Link></li>
                             <li><Link to="/information">Información</Link></li>
+                            <li><Link to="/crud">CRUD</Link></li>
                         </ul>
                     </nav>
                 </header>
@@ -29,6 +31,7 @@ export function Navbar() {
                         <Route path="/catalog" element={<AppCatalog />} />
                         <Route path="/contact" element={<AppContact />} />
                         <Route path="/information" element={<AppInfo />} />
+                        <Route path="/crud" element={<AppCrud />} />
                         <Route path="/product/:id" element={<FocusProduct />} />
                 </Routes>
             </Router>

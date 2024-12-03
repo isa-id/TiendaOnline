@@ -1,0 +1,101 @@
+.crudHover {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 1378px;
+    height: 260px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 3px 3px 20px rgba(28, 28, 28, 0.4);
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.tableCrud{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    color: white;
+    text-align: justify;
+    border-radius: 10px;
+
+}
+.tableCrud thead tr th{
+    border: 1px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+.tableCrud tbody tr td{
+    border: 1px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    height: 80px;
+    text-align: justify;
+    max-width: 400px;
+}
+
+.crudTitle{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.botonesTd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonesTd button{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.warning {
+    background-color: rgb(204, 204, 50);
+}
+
+.warning:hover{
+    background-color: rgb(124, 124, 7)
+}
+
+.warning:active{
+    transform: translate(0px, 2px);
+    background-color: rgb(255, 255, 75);
+}
+
+.danger {
+    background-color: rgb(205, 51, 51);
+}
+
+.danger:hover{
+    background-color: rgb(134, 17, 17);
+}
+
+.danger:active{
+    transform: translate(0px, 2px);
+    background-color: rgb(255, 53, 53);
+    border: none;
+}
+
+
+.enviar {
+    background-color: rgb(51, 205, 72);
+}
+
+.enviar:hover{
+    background-color: rgb(17, 134, 36);
+}
+
+.enviar:active{
+    transform: translate(0px, 2px);
+    background-color: rgb(60, 255, 53);
+    border: none;
+}
